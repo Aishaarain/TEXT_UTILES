@@ -53,7 +53,7 @@ setTimeout(() => {
               <About mode={Mode} toggleMode={toggleMode} />
               } ></Route>
             <Route
-              exact path="/"
+              exact path="/TEXT_UTILES"
               element={
                 <Form heading="Enter the text to analyze" showAlert={showAlert} mode={Mode}  />
               }
