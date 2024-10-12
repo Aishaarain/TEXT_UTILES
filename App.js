@@ -53,12 +53,7 @@ setTimeout(() => {
             <Route exact path="/About" element={
               <About mode={Mode} toggleMode={toggleMode} />
               } ></Route>
-            <Route
-              exact path="/"
-              element={
-                <Form heading="Enter the text to analyze" showAlert={showAlert} mode={Mode}  />
-              }
-            ></Route>
+            
           </Routes>
         </div>
       </BrowserRouter>
