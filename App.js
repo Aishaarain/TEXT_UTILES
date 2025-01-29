@@ -46,10 +46,14 @@ setTimeout(() => {
         
         <BrowserRouter>
         <Navbar title="TextUtils" about="About Us"  mode={Mode} toggleMode={toggleMode} />
+   
+       <Routes>
+     <Route exact path="/" element={
     <Form heading="Enter the text to analyze" showAlert={showAlert} mode={Mode}  />
+     } ></Route>
         <Alert alert={alert}/> 
         <div className="container my-4" mode={Mode} >
-          <Routes>
+       
             <Route exact path="/About" element={
               <About mode={Mode} toggleMode={toggleMode} />
               } ></Route>
